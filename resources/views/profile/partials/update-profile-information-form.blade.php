@@ -1,10 +1,10 @@
 <section>
     <header>
-        <h2 class="text-lg font-medium text-gray-900">
+        <h2 class="text-lg font-medium text-base-content">
             {{ __('Profile Information') }}
         </h2>
 
-        <p class="mt-1 text-sm text-gray-600">
+        <p class="mt-1 text-sm text-base-content">
             {{ __("Update your account's profile information and email address.") }}
         </p>
     </header>
@@ -15,10 +15,10 @@
 
         @if ($user instanceof \Illuminate\Contracts\Auth\MustVerifyEmail && ! $user->hasVerifiedEmail())
             <div>
-                <p class="text-sm mt-2 text-gray-800">
+                <p class="text-sm mt-2 text-base-content">
                     {{ __('Your email address is unverified.') }}
 
-                    <Link method="post" href="{{ route('verification.send') }}" class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    <Link method="post" href="{{ route('verification.send') }}" class="underline text-sm text-base-content hover:text-base-content rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                         {{ __('Click here to re-send the verification email.') }}
                     </Link>
                 </p>
@@ -35,7 +35,7 @@
             <x-splade-submit :label="__('Save')" />
 
             @if (session('status') === 'profile-updated')
-                <p class="text-sm text-gray-600">
+                <p class="text-sm text-base-content">
                     {{ __('Saved.') }}
                 </p>
             @endif

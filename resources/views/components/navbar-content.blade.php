@@ -43,7 +43,7 @@
     </label>
     <div class="dropdown dropdown-end">
         <label tabindex="0" class="btn btn-ghost btn-circle avatar mr-2" @click.prevent="toggle('isProfileOpen')">
-            <div class="w-10 rounded-full">
+            <div class="w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-3">
                 <img
                     src="https://api.dicebear.com/6.x/adventurer/svg?skinColor=f2d3b1,763900,ecad80&seed={{ Auth::user()->name }}" />
             </div>

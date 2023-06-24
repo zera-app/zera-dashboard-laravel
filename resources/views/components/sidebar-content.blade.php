@@ -1,5 +1,5 @@
 <li class="mb-2 flex flex-row">
-    <Link href="/" class="btn btn-ghost normal-case text-2xl"><i class="text-primary">Tad</i>Splade
+    <Link href="/" class="btn btn-ghost normal-case text-2xl"><i class="text-secondary">Tad</i>Splade
     </Link>
     <label for="my-drawer-2" class="content-center lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -7,7 +7,7 @@
         </svg>
     </label>
 </li>
-<li class="menu-title text-primary">Title</li>
+<li class="menu-title text-secondary">Menu</li>
 <li>
     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -28,16 +28,6 @@
         </ul>
     </details>
 </li>
-<div class="divider"></div>
-<li class="menu-title text-primary">Title</li>
-<li><a>Item 1</a></li>
-<li><a>Item 2</a></li>
-<li><a>Item 3</a></li>
-<div class="divider"></div>
-<li class="menu-title text-primary">Title</li>
-<li><a>Item 1</a></li>
-<li><a>Item 2</a></li>
-<li><a>Item 3</a></li>
 <div class="divider"></div>
 <li class="menu-title text-primary">Title</li>
 <li><a>Item 1</a></li>
