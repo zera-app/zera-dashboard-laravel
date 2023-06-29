@@ -4,6 +4,7 @@
             <div class="bg-base-100 dark:bg-neutral overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 border-b border-base-100 text-base-content">
                     You're logged in
+                    <i data-feather="circle"></i>
                 </div>
             </div>
         </div>

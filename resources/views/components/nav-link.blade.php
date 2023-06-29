@@ -2,7 +2,7 @@
 
 @php
 $classes = ($active ?? false)
-? 'active text-base-content bg-base-300'
+? 'active text-base-content bg-base-300 border-r-8 border-secondary'
 : '';
 @endphp
 
