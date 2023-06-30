@@ -26,7 +26,7 @@
     <theme-toggle></theme-toggle>
     <div class="dropdown dropdown-end">
         <label tabindex="0" class="btn btn-ghost btn-circle avatar mr-2" @click.prevent="toggle('isProfileOpen')">
-            <div class="w-10 rounded-full shadow-md">
+            <div class="w-10 rounded-full shadow">
                 <img src="https://api.dicebear.com/6.x/identicon/svg?scale=75&seed={{ Auth::user()->name }}" />
             </div>
         </label>

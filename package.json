@@ -19,8 +19,8 @@
         "vue": "^3.2.41"
     },
     "dependencies": {
+        "@fortawesome/fontawesome-free": "^6.4.0",
         "daisyui": "^3.1.1",
-        "feather-icons": "^4.29.0",
         "theme-change": "^2.5.0"
     }
 }
