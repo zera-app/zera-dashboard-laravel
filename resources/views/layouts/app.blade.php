@@ -1,13 +1,9 @@
 <div class="min-h-screen bg-base-200">
     <x-navigation>
-        <!-- Page Heading -->
-        @if(isset($header))
-        <header class="bg-base-100 shadow-md">
-            <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
-                {{ $header }}
-            </div>
-        </header>
-        @endif
+        <!-- Page Heading Navbar -->
+        <x-slot name="headerNav">
+            {{ $headerNav ?? '' }}
+        </x-slot>
 
         <!-- Page Content -->
         <main>

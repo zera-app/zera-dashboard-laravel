@@ -1,5 +1,7 @@
 <div class="flex-1">
-
+    @if(isset($headerNav))
+    {{ $headerNav }}
+    @endif
 </div>
 <div class="flex-none space-x-3">
     <div class="dropdown dropdown-end">
@@ -31,7 +33,7 @@
             </div>
         </label>
         <ul v-show="isProfileOpen" tabindex="0"
-            class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 space-y-3">
+            class="menu menu-sm dropdown-content p-2 shadow bg-base-100 rounded-box w-52 space-y-3">
             <span class="badge">{{ Auth::user()->name }}</span>
             <div class="badge badge-primary badge-outline">{{ Auth::user()->email }}</div>
             <li class="my-4">
