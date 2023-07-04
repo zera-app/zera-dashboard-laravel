@@ -1,9 +1,9 @@
 <div class="min-h-screen bg-base-200">
-    <x-navigation>
+    <x-navigation headerNav="{{ $headerNav ?? '' }}">
         <!-- Page Heading Navbar -->
-        <x-slot name="headerNav">
-            {{ $headerNav ?? '' }}
-        </x-slot>
+        {{-- @if(isset($headerNav))
+        {{ $headerNav }}
+        @endif --}}
 
         <!-- Page Content -->
         <main>

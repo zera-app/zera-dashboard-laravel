@@ -5,9 +5,7 @@
         <div class="drawer-content flex flex-col">
             <!-- Page content here -->
             <x-navbar>
-                @if(isset($headerNav))
-                {{ $slot }}
-                @endif
+                {{ $headerNav ?? '' }}
             </x-navbar>
 
             {{ $slot }}

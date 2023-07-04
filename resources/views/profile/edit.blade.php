@@ -1,8 +1,6 @@
 <x-app-layout>
     <x-slot name="headerNav">
-        <h2 class="font-semibold text-xl leading-tight">
-            {{ __('Profile') }}
-        </h2>
+        {{ __('Profile') }}
     </x-slot>
 
     <div class="py-12">

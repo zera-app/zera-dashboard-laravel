@@ -8,7 +8,9 @@
             </svg>
         </label>
     </div>
-    <x-navbar-content />
+    <x-navbar-content>
+        {{ $slot }}
+    </x-navbar-content>
 </div>
 {{-- <div class="flex-none hidden lg:block">
     <ul class="menu menu-horizontal">
