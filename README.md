@@ -8,7 +8,6 @@ Using
 Progress
 -   [ ] Dark Mode Component (On Progress)
 -   [ ] Dark Mode Login Page (On progress)
--   [x] Dark Mode Profile Setting
 
 ### guaranteed up-to-date, if the owner is not lazy to update ✌️
 
