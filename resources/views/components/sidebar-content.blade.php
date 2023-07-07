@@ -15,6 +15,12 @@
     </x-nav-link>
 </li>
 <li>
+    <x-nav-link :href="route('test.table')" :active="request()->routeIs('test.table')">
+        <x-heroicon-o-home />
+        {{ __('Testing') }}
+    </x-nav-link>
+</li>
+<li>
     <details>
         <summary>
             <x-heroicon-o-cog-6-tooth />Settings
