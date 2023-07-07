@@ -3,6 +3,6 @@
         {{ __('Dashboard') }}
     </x-slot>
     <div class="p-10">
-        <h1 class="text-3xl">Welcome To Dashboard</h1>
+        <h1 class="text-3xl">Sidebar Documentation</h1>
     </div>
 </x-app-layout>

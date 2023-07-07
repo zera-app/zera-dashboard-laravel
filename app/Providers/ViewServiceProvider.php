@@ -2,10 +2,10 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
-use ProtoneMedia\Splade\Facades\SEO;
 
-class AppServiceProvider extends ServiceProvider
+class ViewServiceProvider extends ServiceProvider
 {
     /**
      * Register any application services.
@@ -20,6 +20,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        SEO::metaByName('theme-color', '#D926A9');
+        View::composer('*', 'App\View\Composer\SidebarComposer');
+        View::composer('*', 'App\View\Composer\MainComposer');
     }
 }
