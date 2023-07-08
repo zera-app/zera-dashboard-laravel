@@ -7,6 +7,13 @@ use Illuminate\Http\Request;
 
 class DocumentationController extends Controller
 {
+    public function index()
+    {
+        $this->spladeTitle('Documentation');
+
+        return view('documentation.index');
+    }
+
     /**
      * Show the documentation for sidebar
      */

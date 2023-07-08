@@ -4,6 +4,9 @@ use App\Http\Controllers\Documentation\DocumentationController;
 use Illuminate\Support\Facades\Route;
 
 Route::group(['prefix' => 'documentation', 'as' => 'documentation.'], function () {
+
+    Route::get('/', [DocumentationController::class, 'index'])->name('index');
+
     Route::get('sidebar', [DocumentationController::class, 'sidebar'])->name('sidebar');
     Route::get('card', [DocumentationController::class, 'card'])->name('card');
     Route::get('button', [DocumentationController::class, 'button'])->name('button');

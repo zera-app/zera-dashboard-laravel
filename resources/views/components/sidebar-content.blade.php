@@ -23,7 +23,7 @@
                     <summary>
                         {!! $menu['icon'] !!} <span>{{ $menu['title'] }}</span>
                     </summary>
-                    <ul>
+                    <ul class="ml-5">
                         @foreach ($menu['menus'] as $submenu)
                             <li>
                                 <x-nav-link :href="route($submenu['route'])" :active="request()->routeIs($submenu['route'])">
