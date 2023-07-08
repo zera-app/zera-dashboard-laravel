@@ -8,7 +8,7 @@
         </span>
         @else
         <Link keep-modal dusk="pagination-simple-previous" href="{{ $paginator->previousPageUrl() }}"
-            class="relative inline-flex items-center px-4 py-2 text-xs sm:text-sm font-medium text-base-content bg-base-100 border border-base-300 leading-5 rounded-md hover:text-gray-500 focus:outline-none focus:ring ring-gray-300 focus:border-blue-300 active:bg-gray-100 active:text-base-content transition ease-in-out duration-150">
+            class="relative inline-flex items-center px-4 py-2 text-xs sm:text-sm font-medium text-base-content bg-base-100 border border-base-300 leading-5 rounded-md hover:text-gray-500 focus:outline-none focus:ring ring-gray-300 focus:border-neutral-content active:bg-gray-100 active:text-base-content transition ease-in-out duration-150">
         {!! __('pagination.previous') !!}
         </Link>
         @endif
@@ -17,7 +17,7 @@
 
         @if ($paginator->hasMorePages())
         <Link keep-modal dusk="pagination-simple-next" href="{{ $paginator->nextPageUrl() }}"
-            class="relative inline-flex items-center px-4 py-2 ml-3 text-xs sm:text-sm font-medium text-base-content bg-base-100 border border-base-300 leading-5 rounded-md hover:text-gray-500 focus:outline-none focus:ring ring-gray-300 focus:border-blue-300 active:bg-gray-100 active:text-base-content transition ease-in-out duration-150">
+            class="relative inline-flex items-center px-4 py-2 ml-3 text-xs sm:text-sm font-medium text-base-content bg-base-100 border border-base-300 leading-5 rounded-md hover:text-gray-500 focus:outline-none focus:ring ring-gray-300 focus:border-neutral-content active:bg-gray-100 active:text-base-content transition ease-in-out duration-150">
         {!! __('pagination.next') !!}
         </Link>
         @else
@@ -65,7 +65,7 @@
                 </span>
                 @else
                 <Link keep-modal dusk="pagination-previous" href="{{ $paginator->previousPageUrl() }}" rel="prev"
-                    class="relative inline-flex items-center px-2 py-2 text-xs sm:text-sm font-medium text-gray-500 bg-base-100 border border-base-300 rounded-l-md leading-5 hover:text-gray-400 focus:z-10 focus:outline-none focus:ring ring-gray-300 focus:border-blue-300 active:bg-gray-100 active:text-gray-500 transition ease-in-out duration-150"
+                    class="relative inline-flex items-center px-2 py-2 text-xs sm:text-sm font-medium text-gray-500 bg-base-100 border border-base-300 rounded-l-md leading-5 hover:text-gray-400 focus:z-10 focus:outline-none focus:ring ring-gray-300 focus:border-neutral-content active:bg-gray-100 active:text-gray-500 transition ease-in-out duration-150"
                     aria-label="{{ __('pagination.previous') }}">
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd"
@@ -92,12 +92,12 @@
                 @if ($page == $paginator->currentPage())
                 <span aria-current="page">
                     <span
-                        class="relative inline-flex items-center px-4 py-2 -ml-px text-xs sm:text-sm font-medium bg-base-200 border-secondary-focus text-base-content z-10 border-2 cursor-default leading-5">{{
+                        class="relative inline-flex items-center px-4 py-2 -ml-px text-xs sm:text-sm font-medium bg-base-300 border-base-200 text-base-content z-10 border cursor-default leading-5">{{
                         $page }}</span>
                 </span>
                 @else
                 <Link keep-modal dusk="pagination-{{ $page }}" href="{{ $url }}"
-                    class="relative inline-flex items-center px-4 py-2 -ml-px text-xs sm:text-sm font-medium text-base-content bg-base-100 border border-base-300 leading-5 hover:text-gray-500 focus:z-10 focus:outline-none focus:ring ring-gray-300 focus:border-blue-300 active:bg-gray-100 active:text-base-content transition ease-in-out duration-150"
+                    class="relative inline-flex items-center px-4 py-2 -ml-px text-xs sm:text-sm font-medium text-base-content bg-base-100 border border-base-300 leading-5 hover:text-gray-500 focus:z-10 focus:outline-none focus:ring ring-gray-300 focus:border-neutral-content active:bg-gray-100 active:text-base-content transition ease-in-out duration-150"
                     aria-label="{{ __('Go to page :page', ['page' => $page]) }}">
                 {{ $page }}
                 </Link>
@@ -109,7 +109,7 @@
                 {{-- Next Page Link --}}
                 @if ($paginator->hasMorePages())
                 <Link keep-modal dusk="pagination-next" href="{{ $paginator->nextPageUrl() }}" rel="next"
-                    class="relative inline-flex items-center px-2 py-2 -ml-px text-xs sm:text-sm font-medium text-gray-500 bg-base-100 border border-base-300 rounded-r-md leading-5 hover:text-gray-400 focus:z-10 focus:outline-none focus:ring ring-gray-300 focus:border-blue-300 active:bg-gray-100 active:text-gray-500 transition ease-in-out duration-150"
+                    class="relative inline-flex items-center px-2 py-2 -ml-px text-xs sm:text-sm font-medium text-gray-500 bg-base-100 border border-base-300 rounded-r-md leading-5 hover:text-gray-400 focus:z-10 focus:outline-none focus:ring ring-gray-300 focus:border-neutral-content active:bg-gray-100 active:text-gray-500 transition ease-in-out duration-150"
                     aria-label="{{ __('pagination.next') }}">
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd"
