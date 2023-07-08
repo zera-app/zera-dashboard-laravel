@@ -1,7 +1,7 @@
 <li class="mb-2 flex flex-row">
-    <Link href="/" class="btn btn-ghost normal-case text-2xl"><i class="text-secondary">Tad</i>Splade
+    <Link href="/" class="btn btn-ghost normal-case text-xl px-2"><i class="text-secondary">Hayko</i>Dashboard
     </Link>
-    <label for="my-drawer-2" class="content-center lg:hidden">
+    <label for="my-drawer-2" class="content-center lg:hidden py-1 px-1">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
         </svg>
