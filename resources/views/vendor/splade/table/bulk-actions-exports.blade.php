@@ -7,9 +7,10 @@
         </svg>
     </x-slot:button>
 
-    <div class="min-w-max rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+    <div class="min-w-max rounded-md shadow-lg bg-base-100 ring-1 ring-black ring-opacity-5">
         <div class="flex flex-col">
-            <h3 v-if="table.hasSelectedItems" class="text-xs uppercase tracking-wide bg-base-300 px-4 py-2 border-b">
+            <h3 v-if="table.hasSelectedItems"
+                class="text-xs uppercase tracking-wide bg-base-300 px-4 py-2 border-b border-base-300">
                 <span v-if="table.totalSelectedItems == 1">
                     <span v-text="table.totalSelectedItems" /> {{ __('Item selected') }}
                 </span>
@@ -21,7 +22,7 @@
 
             @foreach($table->getBulkActions() as $bulkAction)
             <button v-if="table.hasSelectedItems"
-                class="text-left w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 font-normal"
+                class="text-left w-full px-4 py-2 text-sm text-base-content hover:bg-base-200  font-normal"
                 @click.prevent="table.performBulkAction(
                         @js($bulkAction->getUrl()),
                         @js($bulkAction->confirm),
@@ -35,11 +36,11 @@
             @endforeach
 
             @if($table->hasExports() && $table->hasBulkActions())
-            <div v-if="table.hasSelectedItems" class="border-t w-full"></div>
+            <div v-if="table.hasSelectedItems" class="border-t border-base-300 shadow w-full"></div>
             @endif
 
             @if($table->hasExports())
-            <h3 class="text-xs uppercase tracking-wide bg-base-300 px-4 py-2 border-b-base-300">
+            <h3 class="text-xs uppercase tracking-wide bg-base-300 px-4 py-2">
                 {{ __('Export results') }}
             </h3>
             @endif

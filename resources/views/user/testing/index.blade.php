@@ -3,7 +3,7 @@
         {{ __("Table Testing") }}
     </x-slot>
 
-    <x-splade-table :for="$users" striped>
+    <x-splade-table :for="$users">
         <x-splade-cell edit>
             <Link href="/users/{{ $item->id }}/edit"> Edit </Link>
         </x-splade-cell>

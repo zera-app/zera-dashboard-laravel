@@ -1,9 +1,9 @@
 <tbody class="divide-y divide-base-300 bg-base-100">
     @forelse($table->resource as $itemKey => $item)
     <tr :class="{
-                'bg-base-100': table.striped && @js($itemKey) % 2,
-                'hover:bg-base-200': table.striped,
-                'hover:bg-base-100': !table.striped
+                'bg-base-200': table.striped && @js($itemKey) % 2,
+                'hover:bg-base-300': table.striped,
+                'hover:bg-base-200': !table.striped
             }">
         @if($hasBulkActions = $table->hasBulkActions())
         <td width="64" class="text-xs px-6 py-4">
@@ -11,7 +11,7 @@
 
             <input @change="(e) => table.setSelectedItem(@js($itemPrimaryKey), e.target.checked)"
                 :checked="table.itemIsSelected(@js($itemPrimaryKey))" :disabled="table.allItemsFromAllPagesAreSelected"
-                class="rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 disabled:opacity-50"
+                class="rounded border-base-300 text-secondary bg-base-100 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 disabled:opacity-50"
                 name="table-row-bulk-action" type="checkbox" value="{{ $itemPrimaryKey }}" />
         </td>
         @endif

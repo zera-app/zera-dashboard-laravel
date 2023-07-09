@@ -1,5 +1,5 @@
 <li class="mb-2 flex flex-row">
-    <Link href="/" class="btn btn-ghost normal-case text-xl px-2"><i class="text-secondary">Hayko</i>Dashboard
+    <Link href="/" class="btn btn-ghost normal-case text-2xl px-1 py-1"><i class="text-secondary">Zera</i>Dashboard
     </Link>
     <label for="my-drawer-2" class="content-center lg:hidden py-1 px-1">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
