@@ -27,6 +27,17 @@
                 </div>
             </x-collapse>
         </div>
+
+        <div class="">
+            <x-tooltip class="tooltip-primary" data-tip="Tooltip Content">
+                <x-button class="btn-primary">Tooltip</x-button>
+            </x-tooltip>
+        </div>
+
+        <button class="btn" onclick="my_modal_2.showModal()">open modal</button>
+        <x-modal id="my_modal_2">
+            <h1>Hello Modal</h1>
+        </x-modal>
     </x-card>
 
 </x-app-layout>

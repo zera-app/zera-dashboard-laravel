@@ -9,8 +9,6 @@
             </x-navbar>
 
             {{ $slot }}
-
-            {{-- in there is footer (if any) --}}
         </div>
 
         <x-sidebar />

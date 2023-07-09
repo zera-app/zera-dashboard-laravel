@@ -3,7 +3,7 @@
 use App\Http\Controllers\Documentation\DocumentationController;
 use Illuminate\Support\Facades\Route;
 
-Route::group(['prefix' => 'documentation', 'as' => 'documentation.'], function () {
+Route::group(['prefix' => 'documentation', 'as' => 'documentation.', 'middleware' => 'auth'], function () {
 
     Route::get('/', [DocumentationController::class, 'index'])->name('index');
 
