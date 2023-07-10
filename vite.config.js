@@ -11,6 +11,11 @@ export default defineConfig({
         }),
         vue({
             template: {
+                compilerOptions: {
+                    isCustomElement: (tag) => {
+                        return tag.startsWith('heroicon-o-')
+                    }
+                },
                 transformAssetUrls: {
                     base: null,
                     includeAbsolute: false,
