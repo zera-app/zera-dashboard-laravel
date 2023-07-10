@@ -1,21 +1,22 @@
 <div class="min-h-screen bg-base-200">
     <x-navigation headerNav="{{ $headerNav ?? '' }}">
         <!-- Page Heading Navbar -->
-        {{-- @if(isset($headerNav))
+        {{-- @if (isset($headerNav))
         {{ $headerNav }}
         @endif --}}
 
         <!-- Page Content -->
-        <main>
-            <div class="py-12">
-                <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                    <div class="bg-base-100 overflow-hidden shadow-sm sm:rounded-lg">
-                        <div class="p-6 border-b border-base-100 text-base-content">
-                            {{ $slot }}
-                        </div>
-                    </div>
+        <div class="flex flex-col justify-between min-h-screen">
+
+            <main class="p-10">
+                {{ $slot }}
+            </main>
+
+            <footer class="footer footer-center p-4 bg-base-300 text-base-content">
+                <div>
+                    <p>Copyright © {{ \Carbon\Carbon::now()->format('Y') }} - All right reserved by {{ env('COPY_RIGHT') }}</p>
                 </div>
-            </div>
-        </main>
+            </footer>
+        </div>
     </x-navigation>
 </div>
