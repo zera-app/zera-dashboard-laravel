@@ -68,18 +68,118 @@ class SidebarContent
                         'icon' => @svg('heroicon-o-computer-desktop'),
                         'menus' => [
                             [
+                                'title' => 'alert',
+                                'route' => 'documentation.alert',
+                                'icon' => null,
+                            ],
+                            [
+                                'title' => 'badge',
+                                'route' => 'documentation.badge',
+                                'icon' => null,
+                            ],
+                            [
+                                'title' => 'button',
+                                'route' => 'documentation.button',
+                                'icon' => null,
+                            ],
+                            [
                                 'title' => 'Card',
                                 'route' => 'documentation.card',
                                 'icon' => null,
                             ],
                             [
-                                'title' => 'Button',
-                                'route' => 'documentation.button',
+                                'title' => 'collapse',
+                                'route' => 'documentation.collapse',
                                 'icon' => null,
                             ],
                             [
-                                'title' => 'Input',
+                                'title' => 'modal',
+                                'route' => 'documentation.modal',
+                                'icon' => null,
+                            ],
+                            [
+                                'title' => 'tooltip',
+                                'route' => 'documentation.tooltip',
+                                'icon' => null,
+                            ],
+                            [
+                                'title' => 'flash',
+                                'route' => 'documentation.flash',
+                                'icon' => null,
+                            ],
+                            [
+                                'title' => 'form',
+                                'route' => 'documentation.form',
+                                'icon' => null,
+                            ],
+                            [
+                                'title' => 'link',
+                                'route' => 'documentation.link',
+                                'icon' => null,
+                            ],
+                            [
+                                'title' => 'script',
+                                'route' => 'documentation.script',
+                                'icon' => null,
+                            ],
+                            [
+                                'title' => 'toggle',
+                                'route' => 'documentation.toggle',
+                                'icon' => null,
+                            ],
+                            [
+                                'title' => 'transition',
+                                'route' => 'documentation.transition',
+                                'icon' => null,
+                            ],
+                            [
+                                'title' => 'teleport',
+                                'route' => 'documentation.teleport',
+                                'icon' => null,
+                            ],
+                            [
+                                'title' => 'input-overview',
+                                'route' => 'documentation.input-overview',
+                                'icon' => null,
+                            ],
+                            [
+                                'title' => 'input',
                                 'route' => 'documentation.input',
+                                'icon' => null,
+                            ],
+                            [
+                                'title' => 'textarea',
+                                'route' => 'documentation.textarea',
+                                'icon' => null,
+                            ],
+                            [
+                                'title' => 'select',
+                                'route' => 'documentation.select',
+                                'icon' => null,
+                            ],
+                            [
+                                'title' => 'checkbox',
+                                'route' => 'documentation.checkbox',
+                                'icon' => null,
+                            ],
+                            [
+                                'title' => 'radio',
+                                'route' => 'documentation.radio',
+                                'icon' => null,
+                            ],
+                            [
+                                'title' => 'file',
+                                'route' => 'documentation.file',
+                                'icon' => null,
+                            ],
+                            [
+                                'title' => 'group',
+                                'route' => 'documentation.group',
+                                'icon' => null,
+                            ],
+                            [
+                                'title' => 'submit',
+                                'route' => 'documentation.submit',
                                 'icon' => null,
                             ],
                         ],

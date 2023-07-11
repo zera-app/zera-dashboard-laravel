@@ -39,13 +39,18 @@ export default {
         };
     },
     mounted() {
-        this.theme = document.documentElement.getAttribute("data-theme");
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme) {
+            this.theme = savedTheme;
+            document.documentElement.setAttribute("data-theme", savedTheme);
+        }
     },
     methods: {
         toggleTheme() {
             const newTheme = this.theme === "light" ? "dark" : "light";
             document.documentElement.setAttribute("data-theme", newTheme);
             this.theme = newTheme;
+            localStorage.setItem("theme", newTheme);
         },
     },
 };
