@@ -26,7 +26,7 @@ And even use inline styles:
 <x-heroicon-o-arrow-left style="color: #555"/>
 ```
 
-Or use the `@svg` in blade directive:
+Or use the `@svg` in directive:
 
 ```blade
 @svg('heroicon-o-arrow-left', 'w-6 h-6', ['style' => 'color: #555'])
@@ -44,7 +44,7 @@ The mini icons can be referenced like this:
 <x-heroicon-m-arrow-left/>
 ```
 
-## development process
+## Development Process
 
 -   [ ] Dark Mode Component (On Progress)
 -   [ ] Dark Mode Login Page (On progress)

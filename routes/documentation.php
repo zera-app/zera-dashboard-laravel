@@ -33,6 +33,7 @@ Route::group(['prefix' => 'documentation', 'as' => 'documentation.', 'middleware
 
     Route::get('inputOverview', [DocumentationController::class, 'inputOverview'])->name('input-overview');
     Route::get('input', [DocumentationController::class, 'input'])->name('input');
+    Route::get('inputFloat', [DocumentationController::class, 'inputFloat'])->name('input-float');
     Route::get('textarea', [DocumentationController::class, 'textarea'])->name('textarea');
     Route::get('select', [DocumentationController::class, 'select'])->name('select');
     Route::get('checkbox', [DocumentationController::class, 'checkbox'])->name('checkbox');

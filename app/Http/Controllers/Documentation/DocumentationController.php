@@ -291,6 +291,18 @@ class DocumentationController extends Controller
     }
 
     /**
+     * Documentation for splade input.
+     * 
+     * @return \Illuminate\View\View
+     */
+    public function inputFloat()
+    {
+        $this->spladeTitle('Input Float');
+
+        return view('documentation.input-float');
+    }
+
+    /**
      * Documentation for splade textarea.
      * 
      * @return \Illuminate\View\View

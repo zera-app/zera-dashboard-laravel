@@ -148,6 +148,11 @@ class SidebarContent
                                 'icon' => null,
                             ],
                             [
+                                'title' => 'input float-label',
+                                'route' => 'documentation.input-float',
+                                'icon' => null,
+                            ],
+                            [
                                 'title' => 'textarea',
                                 'route' => 'documentation.textarea',
                                 'icon' => null,
@@ -180,6 +185,41 @@ class SidebarContent
                             [
                                 'title' => 'submit',
                                 'route' => 'documentation.submit',
+                                'icon' => null,
+                            ],
+                            [
+                                'title' => 'wysiwyg',
+                                'route' => 'documentation.wysiwyg',
+                                'icon' => null,
+                            ],
+                            [
+                                'title' => 'model-binding',
+                                'route' => 'documentation.model-binding',
+                                'icon' => null,
+                            ],
+                            [
+                                'title' => 'table-overview',
+                                'route' => 'documentation.table-overview',
+                                'icon' => null,
+                            ],
+                            [
+                                'title' => 'table-query-builder',
+                                'route' => 'documentation.table-query-builder',
+                                'icon' => null,
+                            ],
+                            [
+                                'title' => 'table-bulk-action',
+                                'route' => 'documentation.table-bulk-action',
+                                'icon' => null,
+                            ],
+                            [
+                                'title' => 'table-export',
+                                'route' => 'documentation.table-export',
+                                'icon' => null,
+                            ],
+                            [
+                                'title' => 'table-spatie-query-builder',
+                                'route' => 'documentation.table-spatie-query-builder',
                                 'icon' => null,
                             ],
                         ],
