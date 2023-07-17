@@ -40,11 +40,6 @@ trait SpladeHelpers
         SEO::metaByProperty($property, $attribute);
     }
 
-    public function spladeMetaItemprop(string $itemprop, string $attribute)
-    {
-        SEO::metaByItemprop($itemprop, $attribute);
-    }
-
     public function spladeToast(array $arr)
     {
         $success = isset($arr['success']) ? $arr['success'] : throw new \InvalidArgumentException("Invalid property for splade toast. Expected [] with key success and message.");
