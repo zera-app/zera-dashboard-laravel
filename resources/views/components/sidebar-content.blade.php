@@ -1,3 +1,6 @@
+@php
+use App\View\Composer\Sidebar\SidebarContent;
+@endphp
 <li class="mb-2 flex flex-row justify-between lg:justify-center">
 
     <Link href="/" class="btn btn-ghost normal-case text-2xl text-secondary px-2">{{ $title }}</Link>
@@ -18,8 +21,11 @@
 
 @foreach ($item['menus'] as $menu)
 @if (count($menu['menus']) > 0)
+@php
+$hasActiveChild = SidebarContent::hasActiveChild($menu['menus']);
+@endphp
 <li>
-    <details>
+    <details {{ $hasActiveChild ? 'open' : '' }}>
         <summary>
             {{ $menu['icon'] }} <span>{{ $menu['title'] }}</span>
         </summary>
@@ -43,3 +49,15 @@
 @endif
 @endforeach
 @endforeach
+{{-- <x-splade-script>
+    const activeMenus = document.querySelectorAll('.sidebar .menu li .active');
+
+    activeMenus.forEach(activeMenu => {
+
+    const details = activeMenu.closest('details');
+
+    if (details) {
+    details.setAttribute('open', '');
+    }
+    });
+</x-splade-script> --}}

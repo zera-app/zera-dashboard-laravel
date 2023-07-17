@@ -5,6 +5,17 @@ namespace App\View\Composer\Sidebar;
 
 class SidebarContent
 {
+
+    public static function hasActiveChild($menus)
+    {
+        foreach ($menus as $menu) {
+            if (request()->routeIs($menu['route']) || (isset($menu['menus']) && static::hasActiveChild($menu['menus']))) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public static function dashboard()
     {
         return [
@@ -103,7 +114,24 @@ class SidebarContent
                                 'icon' => null,
                             ],
                             [
+                                'title' => 'input float-label',
+                                'route' => 'documentation.input-float',
+                                'icon' => null,
+                            ],
+                        ],
+                    ],
+                    [
+                        'title' => 'Component (Splade)',
+                        'route' => null,
+                        'icon' => @svg('heroicon-o-computer-desktop'),
+                        'menus' => [
+                            [
                                 'title' => 'flash',
+                                'route' => 'documentation.flash',
+                                'icon' => null,
+                            ],
+                            [
+                                'title' => 'toast',
                                 'route' => 'documentation.flash',
                                 'icon' => null,
                             ],
@@ -143,13 +171,9 @@ class SidebarContent
                                 'icon' => null,
                             ],
                             [
+                                'title' => 'Input',
                                 'title' => 'input',
                                 'route' => 'documentation.input',
-                                'icon' => null,
-                            ],
-                            [
-                                'title' => 'input float-label',
-                                'route' => 'documentation.input-float',
                                 'icon' => null,
                             ],
                             [
@@ -222,7 +246,7 @@ class SidebarContent
                                 'route' => 'documentation.table-spatie-query-builder',
                                 'icon' => null,
                             ],
-                        ],
+                        ]
                     ],
                 ],
             ]

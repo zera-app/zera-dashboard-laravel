@@ -22,7 +22,9 @@ Route::group(['prefix' => 'documentation', 'as' => 'documentation.', 'middleware
     Route::get('collapse', [DocumentationController::class, 'collapse'])->name('collapse');
     Route::get('modal', [DocumentationController::class, 'modal'])->name('modal');
     Route::get('tooltip', [DocumentationController::class, 'tooltip'])->name('tooltip');
+    Route::get('input-float', [DocumentationController::class, 'inputFloat'])->name('input-float');
 
+    //Splade
     Route::get('flash', [DocumentationController::class, 'flash'])->name('flash');
     Route::get('form', [DocumentationController::class, 'form'])->name('form');
     Route::get('link', [DocumentationController::class, 'link'])->name('link');
@@ -33,7 +35,6 @@ Route::group(['prefix' => 'documentation', 'as' => 'documentation.', 'middleware
 
     Route::get('input-overview', [DocumentationController::class, 'inputOverview'])->name('input-overview');
     Route::get('input', [DocumentationController::class, 'input'])->name('input');
-    Route::get('input-float', [DocumentationController::class, 'inputFloat'])->name('input-float');
     Route::get('textarea', [DocumentationController::class, 'textarea'])->name('textarea');
     Route::get('select', [DocumentationController::class, 'select'])->name('select');
     Route::get('checkbox', [DocumentationController::class, 'checkbox'])->name('checkbox');

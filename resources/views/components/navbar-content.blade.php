@@ -11,7 +11,7 @@
                 <span class="badge badge-xs bg-red-500 indicator-item"></span>
             </div>
         </label>
-        <div tabindex="0" class="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow">
+        <div tabindex="0" class="z-10 mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow">
             <div class="card-body">
                 You don't have any notifications
             </div>
@@ -25,7 +25,7 @@
             </div>
         </label>
         <ul v-show="isProfileOpen" tabindex="0"
-            class="menu menu-sm dropdown-content p-2 shadow bg-base-100 rounded-box w-52 space-y-3">
+            class="z-10 menu menu-sm dropdown-content p-2 shadow bg-base-100 rounded-box w-52 space-y-3">
             <span class="badge">{{ Auth::user()->name }}</span>
             <div class="badge badge-primary badge-outline">{{ Auth::user()->email }}</div>
             <li class="my-4">

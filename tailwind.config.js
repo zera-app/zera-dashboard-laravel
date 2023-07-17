@@ -22,8 +22,14 @@ export default {
 
     daisyui: {
       themes: [
-        "light",
-        "dark",
+        {
+          "light": {
+            ...require("daisyui/src/theming/themes")["[data-theme=light]"],
+            "secondary": "#F000B8",
+            "secondary-focus" : "#CC009C"
+          }
+        },
+        "dark"
       ],
     }
 };
