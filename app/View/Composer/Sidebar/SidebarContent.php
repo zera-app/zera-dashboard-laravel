@@ -40,9 +40,9 @@ class SidebarContent
                         'menus' => [],
                     ],
                     [
-                        'title' => 'Testing Table',
-                        'route' => 'test.table',
-                        'icon' => @svg('heroicon-o-table-cells'),
+                        'title' => 'Custom Color',
+                        'route' => 'documentation.color',
+                        'icon' => @svg('heroicon-o-swatch'),
                         'menus' => [],
                     ],
                     [

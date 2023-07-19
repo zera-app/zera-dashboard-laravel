@@ -61,6 +61,18 @@ class DocumentationController extends Controller
      * 
      * @return \Illuminate\View\View
      */
+    public function color()
+    {
+        $this->spladeTitle('Custom Color');
+
+        return view('documentation.color');
+    }
+
+    /**
+     * Documentation for sidebar.
+     * 
+     * @return \Illuminate\View\View
+     */
     public function sidebar()
     {
         $this->spladeTitle('Sidebar');

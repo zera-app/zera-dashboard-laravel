@@ -29,7 +29,7 @@ $hasActiveChild = SidebarContent::hasActiveChild($menu['menus']);
         <summary>
             {{ $menu['icon'] }} <span>{{ $menu['title'] }}</span>
         </summary>
-        <ul class="ml-5">
+        <ul class="ml-5 mt-2">
             @foreach ($menu['menus'] as $submenu)
             <li>
                 <x-nav-link :href="route($submenu['route'])" :active="request()->routeIs($submenu['route'])">

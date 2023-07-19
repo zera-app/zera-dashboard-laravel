@@ -11,6 +11,7 @@ Route::group(['prefix' => 'documentation', 'as' => 'documentation.', 'middleware
     Route::get('upload-file-helper', [DocumentationController::class, 'uploadFileHelper'])->name('upload-file-helper');
     Route::get('splade-helper', [DocumentationController::class, 'spladeHelper'])->name('splade-helper');
 
+    Route::get('color', [DocumentationController::class, 'color'])->name('color');
     Route::get('sidebar', [DocumentationController::class, 'sidebar'])->name('sidebar');
     Route::get('config', [DocumentationController::class, 'config'])->name('config');
 

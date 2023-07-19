@@ -1,4 +1,5 @@
 @php $flatpickrOptions = $flatpickrOptions() @endphp
+@props(['class' => ''])
 
 <SpladeInput {{ $attributes->only(['v-if', 'v-show', 'v-for', 'class'])->class(['hidden' => $isHidden()]) }}
     :flatpickr="@js($flatpickrOptions)"
@@ -18,7 +19,9 @@
             @endif
 
             <input {{ $attributes->except(['v-if', 'v-show', 'v-for', 'class'])->class([
-            'bg-base-100 text-base-content block w-full border-0 shadow border-base-300 focus:border-secondary-focus
+            $class ? $class : 'bg-base-200',
+            'text-base-content block w-full border-0 shadow border-base-300
+            focus:border-secondary-focus
             focus:ring-2
             focus:ring-secondary-focus
             focus:ring-opacity-50 disabled:opacity-50 disabled:bg-gray-50 disabled:cursor-not-allowed',
