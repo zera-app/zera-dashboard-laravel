@@ -46,5 +46,7 @@ The mini icons can be referenced like this:
 
 ## Development Process
 
+-   [ ] create more components for the template
+-   [ ] documentation for template components and splade components
 -   [ ] Dark Mode Component (On Progress)
 -   [ ] Dark Mode Login Page (On progress)
