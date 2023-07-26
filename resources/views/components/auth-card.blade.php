@@ -1,15 +1,20 @@
-<div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
-    <div>
-        @isset($logo)
-            {{ $logo }}
-        @else
-            <Link href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
-            </Link>
-        @endisset
-    </div>
+<div class="font-sans text-gray-900 antialiased bg-base-200">
+    <div class="flex flex-col justify-between min-h-screen">
+        <main class="flex items-center justify-center md:min-w-[90vh] min-h-[90vh] mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 bg-base-100 w-full rounded shadow-md border border-base-100 p-10">
+                <div class="hidden md:flex justify-center items-center h-full w-full">
+                    <img src="{{ asset('img/auth/auth.png') }}" alt="Auth Image" class="bg-cover object-cover bg-no-repeat max-h-[400px]" />
+                </div>
+                <div class="">
+                    {{ $slot }}
+                </div>
+            </div>
+        </main>
 
-    <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
-        {{ $slot }}
+        <footer class="footer footer-center p-4 bg-base-300 text-base-content">
+            <div>
+                <p>Copyright © {{ \Carbon\Carbon::now()->format('Y') }} - All right reserved by {{ env('COPY_RIGHT') }}</p>
+            </div>
+        </footer>
     </div>
 </div>
