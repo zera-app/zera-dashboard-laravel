@@ -47,7 +47,7 @@ export default {
     },
     methods: {
         toggleTheme() {
-            const newTheme = this.theme === "light" ? "dracula" : "light";
+            const newTheme = this.theme === "light" ? "dark" : "light";
             document.documentElement.setAttribute("data-theme", newTheme);
             this.theme = newTheme;
             localStorage.setItem("theme", newTheme);

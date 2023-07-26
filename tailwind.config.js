@@ -18,22 +18,26 @@ export default {
         extend: {},
     },
 
-    plugins: [require('daisyui'), forms, typography],
+    plugins: [require("daisyui"), forms, typography],
 
     daisyui: {
-      themes: [
-        {
-          "light": {
-            ...require("daisyui/src/theming/themes")["[data-theme=light]"],
-            "secondary": "#F000B8",
-            "secondary-focus" : "#CC009C"
-          },
-          "dracula": {
-            ...require("daisyui/src/theming/themes")["[data-theme=dracula]"],
-            "secondary": "#FFA233",
-            "secondary-focus" : "#FF8D33"
-          }
-        },
-      ],
-    }
+        themes: [
+            {
+                light: {
+                    ...require("daisyui/src/theming/themes")[
+                        "[data-theme=light]"
+                    ],
+                    // secondary: "#F000B8",
+                    // "secondary-focus": "#CC009C",
+                },
+                dark: {
+                    ...require("daisyui/src/theming/themes")[
+                        "[data-theme=dark]"
+                    ],
+                    // secondary: "#FFA233",
+                    // "secondary-focus": "#FF8D33",
+                },
+            },
+        ],
+    },
 };
