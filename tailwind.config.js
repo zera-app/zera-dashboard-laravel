@@ -27,15 +27,15 @@ export default {
                     ...require("daisyui/src/theming/themes")[
                         "[data-theme=light]"
                     ],
-                    // secondary: "#F000B8",
+                    // "secondary": "#F000B8",
                     // "secondary-focus": "#CC009C",
                 },
-                dark: {
+                dracula: {
                     ...require("daisyui/src/theming/themes")[
-                        "[data-theme=dark]"
+                        "[data-theme=dracula]"
                     ],
-                    // secondary: "#FFA233",
-                    // "secondary-focus": "#FF8D33",
+                     "secondary": "#F000B8",
+                    "secondary-focus": "#CC009C",
                 },
             },
         ],

@@ -1,7 +1,7 @@
 <x-app-layout>
 
     @php
-        $pageName = 'Badge Component';
+    $pageName = 'Badge Component';
     @endphp
 
     <x-breadcrumbs>
@@ -16,7 +16,7 @@
             This template have build in badge component.
         </p>
 
-        <div class="flex">
+        <div class="grid gap-3 grid-cols-3 lg:grid-cols-6">
             <x-badge class="mx-1 badge">badge</x-badge>
             <x-badge class="mx-1 badge-neutral">badge-neutral</x-badge>
             <x-badge class="mx-1 badge-primary">badge-primary</x-badge>
