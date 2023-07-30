@@ -1,7 +1,7 @@
 <x-app-layout>
 
     @php
-        $pageName = 'Button Component';
+    $pageName = 'Button Component';
     @endphp
 
     <x-breadcrumbs>
