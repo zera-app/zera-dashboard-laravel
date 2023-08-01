@@ -5,7 +5,7 @@
     @endphp
 
     <x-breadcrumbs>
-        <x-breadcrumbs-link>Testing Documentation</x-breadcrumbs-link>
+        <x-breadcrumbs-link>Documentation</x-breadcrumbs-link>
         <x-breadcrumbs-link>{{ $pageName }}</x-breadcrumbs-link>
     </x-breadcrumbs>
 
