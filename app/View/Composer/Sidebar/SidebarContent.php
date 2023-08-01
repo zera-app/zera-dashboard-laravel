@@ -132,7 +132,7 @@ class SidebarContent
                             ],
                             [
                                 'title' => 'toast',
-                                'route' => 'documentation.flash',
+                                'route' => 'documentation.toast',
                                 'icon' => null,
                             ],
                             [

@@ -27,6 +27,7 @@ Route::group(['prefix' => 'documentation', 'as' => 'documentation.', 'middleware
 
     //Splade
     Route::get('flash', [DocumentationController::class, 'flash'])->name('flash');
+    Route::get('toast', [DocumentationController::class, 'toast'])->name('toast');
     Route::get('form', [DocumentationController::class, 'form'])->name('form');
     Route::get('link', [DocumentationController::class, 'link'])->name('link');
     Route::get('script', [DocumentationController::class, 'script'])->name('script');

@@ -205,6 +205,18 @@ class DocumentationController extends Controller
     }
 
     /**
+     * Documentation for splade toast.
+     * 
+     * @return \Illuminate\View\View
+     */
+    public function toast()
+    {
+        $this->spladeTitle('Toast');
+
+        return view('documentation.toast');
+    }
+
+    /**
      * Documentation for splade form.
      * 
      * @return \Illuminate\View\View
