@@ -1,3 +1,5 @@
+# Open For Hactoberfest
+
 ## Starter Template Dashboard for Laravel
 
 Using
@@ -46,7 +48,7 @@ The mini icons can be referenced like this:
 
 ## Development Process
 
--   [ ] create more components for the template
--   [ ] documentation for template components and splade components
--   [ ] Dark Mode Component (On Progress)
--   [ ] Dark Mode Login Page (On progress)
+-   [x] create more components for the template
+-   [x] documentation for template components and splade components
+-   [x] Dark Mode Component (On Progress)
+-   [x] Dark Mode Login Page (On progress)
