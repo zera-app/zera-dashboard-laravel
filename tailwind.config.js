@@ -34,7 +34,7 @@ export default {
                     ...require("daisyui/src/theming/themes")[
                         "[data-theme=dracula]"
                     ],
-                     "secondary": "#F000B8",
+                    "secondary": "#F000B8",
                     "secondary-focus": "#CC009C",
                 },
             },
