@@ -76,7 +76,7 @@ class SidebarContent
                     [
                         'title' => 'Component',
                         'route' => null,
-                        'icon' => @svg('heroicon-o-computer-desktop'),
+                        'icon' => @svg('heroicon-o-credit-card'),
                         'menus' => [
                             [
                                 'title' => 'alert',
@@ -123,7 +123,7 @@ class SidebarContent
                     [
                         'title' => 'Component (Splade)',
                         'route' => null,
-                        'icon' => @svg('heroicon-o-computer-desktop'),
+                        'icon' => @svg('heroicon-o-list-bullet'),
                         'menus' => [
                             [
                                 'title' => 'flash',
@@ -165,6 +165,13 @@ class SidebarContent
                                 'route' => 'documentation.teleport',
                                 'icon' => null,
                             ],
+                        ]
+                    ],
+                    [
+                        'title' => 'Input Component (Splade)',
+                        'route' => null,
+                        'icon' => @svg('heroicon-o-window'),
+                        'menus' => [
                             [
                                 'title' => 'input-overview',
                                 'route' => 'documentation.input-overview',
@@ -221,6 +228,13 @@ class SidebarContent
                                 'route' => 'documentation.model-binding',
                                 'icon' => null,
                             ],
+                        ]
+                    ],
+                    [
+                        'title' => 'Table Component (Splade)',
+                        'route' => null,
+                        'icon' => @svg('heroicon-o-table-cells'),
+                        'menus' => [
                             [
                                 'title' => 'table-overview',
                                 'route' => 'documentation.table-overview',
