@@ -21,10 +21,12 @@ class SidebarContent
         return [
             [
                 'title' => 'Dashboard',
+                'permissions' => '',
                 'menus' => [
                     [
                         'title' => 'Dashboard',
                         'route' => 'dashboard',
+                        'permissions' => '',
                         'icon' => @svg('heroicon-o-home'),
                         'menus' => [],
                     ],
@@ -32,33 +34,39 @@ class SidebarContent
             ],
             [
                 'title' => 'Documentation',
+                'permissions' => '',
                 'menus' => [
                     [
                         'title' => 'Testing Components',
                         'route' => 'documentation.index',
                         'icon' => @svg('heroicon-o-bug-ant'),
+                        'permissions' => '',
                         'menus' => [],
                     ],
                     [
                         'title' => 'Custom Color',
                         'route' => 'documentation.color',
                         'icon' => @svg('heroicon-o-swatch'),
+                        'permissions' => '',
                         'menus' => [],
                     ],
                     [
                         'title' => 'Sidebar',
                         'route' => 'documentation.sidebar',
                         'icon' => @svg('heroicon-o-adjustments-horizontal'),
+                        'permissions' => '',
                         'menus' => [],
                     ],
                     [
                         'title' => 'Helpers',
                         'route' => null,
                         'icon' => @svg('heroicon-o-question-mark-circle'),
+                        'permissions' => '',
                         'menus' => [
                             [
                                 'title' => 'Controller helpers',
                                 'route' => 'documentation.controller-helper',
+                                'permissions' => '',
                                 'icon' => null,
                             ],
                             [
