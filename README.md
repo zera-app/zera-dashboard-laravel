@@ -21,11 +21,11 @@ Using
 
 - Light Mode
   
-![Light Mode](https://github.com/zera-app/zera-dashboard-laravel/assets/70498944/d1f494b5-367c-47c2-83a4-438dcfbc41cd)
+![Light Mode](https://github.com/zera-app/zera-dashboard-laravel/assets/70498944/d1cb86ee-2dfe-45f0-b143-3a69731e803e)
 
 - Dark Mode
   
-![Dark Mode](https://github.com/zera-app/zera-dashboard-laravel/assets/70498944/80841542-1cb3-4870-94a4-0641f0839ef9)
+![Dark Mode](https://github.com/zera-app/zera-dashboard-laravel/assets/70498944/d4f7bb9e-b22c-4d87-a480-a7a162786a3d)
 
 - Profile Page
   
