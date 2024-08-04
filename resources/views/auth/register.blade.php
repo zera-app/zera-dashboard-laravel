@@ -16,7 +16,7 @@
                 <x-splade-submit class="w-full" :label="__('Sign Up')" />
 
                 <div class="mt-6 text-center">
-                    <Link class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
+                    <Link class="underline text-sm text-gray-600 hover:text-gray-900 dark:hover:text-slate-300" href="{{ route('login') }}">
                     {{ __('Already have an account?') }}
                     </Link>
                 </div>
