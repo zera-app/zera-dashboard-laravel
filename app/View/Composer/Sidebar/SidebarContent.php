@@ -2,10 +2,8 @@
 
 namespace App\View\Composer\Sidebar;
 
-
 class SidebarContent
 {
-
     public static function hasActiveChild($menus)
     {
         foreach ($menus as $menu) {

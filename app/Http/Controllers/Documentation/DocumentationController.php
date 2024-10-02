@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Documentation;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
 use Illuminate\View\View;
 
 class DocumentationController extends Controller
@@ -19,7 +18,7 @@ class DocumentationController extends Controller
 
     /**
      * Documentation for controller helper.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function controllerHelper(): View
@@ -31,7 +30,7 @@ class DocumentationController extends Controller
 
     /**
      * Documentation for upload file helper.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function uploadFileHelper()
@@ -43,7 +42,7 @@ class DocumentationController extends Controller
 
     /**
      * Documentation for splade helper.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function spladeHelper()
@@ -58,7 +57,7 @@ class DocumentationController extends Controller
     // ! PAGES DOCUMENTATION ---------------------------------------------------------------
     /**
      * Documentation for sidebar.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function color()
@@ -70,7 +69,7 @@ class DocumentationController extends Controller
 
     /**
      * Documentation for sidebar.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function sidebar()
@@ -82,7 +81,7 @@ class DocumentationController extends Controller
 
     /**
      * Documentation for config.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function config()
@@ -96,7 +95,7 @@ class DocumentationController extends Controller
     // ! COMPONENTS DOCUMENTATION ---------------------------------------------------------------
     /**
      * Documentation for alert.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function alert()
@@ -108,7 +107,7 @@ class DocumentationController extends Controller
 
     /**
      * Documentation for badge.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function badge()
@@ -120,7 +119,7 @@ class DocumentationController extends Controller
 
     /**
      * Documentation for breadcrumb.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function breadcrumb()
@@ -132,7 +131,7 @@ class DocumentationController extends Controller
 
     /**
      * Documentation for button.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function button()
@@ -144,7 +143,7 @@ class DocumentationController extends Controller
 
     /**
      * Documentation for card.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function card()
@@ -156,7 +155,7 @@ class DocumentationController extends Controller
 
     /**
      * Documentation for collapse.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function collapse()
@@ -168,7 +167,7 @@ class DocumentationController extends Controller
 
     /**
      * Documentation for modal.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function modal()
@@ -180,7 +179,7 @@ class DocumentationController extends Controller
 
     /**
      * Documentation for tooltip.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function tooltip()
@@ -194,7 +193,7 @@ class DocumentationController extends Controller
     // ! SPLADE COMPONENT DOCUMENTATION ---------------------------------------------------------------
     /**
      * Documentation for splade flash.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function flash()
@@ -206,7 +205,7 @@ class DocumentationController extends Controller
 
     /**
      * Documentation for splade toast.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function toast()
@@ -218,7 +217,7 @@ class DocumentationController extends Controller
 
     /**
      * Documentation for splade form.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function form()
@@ -230,7 +229,7 @@ class DocumentationController extends Controller
 
     /**
      * Documentation for splade link.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function link()
@@ -242,7 +241,7 @@ class DocumentationController extends Controller
 
     /**
      * Documentation for splade script.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function script()
@@ -254,7 +253,7 @@ class DocumentationController extends Controller
 
     /**
      * Documentation for splade toggle.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function toggle()
@@ -266,7 +265,7 @@ class DocumentationController extends Controller
 
     /**
      * Documentation for splade transition.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function transition()
@@ -278,7 +277,7 @@ class DocumentationController extends Controller
 
     /**
      * Documentation for splade teleport.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function teleport()
@@ -292,7 +291,7 @@ class DocumentationController extends Controller
     // ! SPLADE INPUT COMPONENT DOCUMENTATION ---------------------------------------------------------------
     /**
      * Documentation for splade input.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function inputOverview()
@@ -304,7 +303,7 @@ class DocumentationController extends Controller
 
     /**
      * Documentation for splade input.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function input()
@@ -316,7 +315,7 @@ class DocumentationController extends Controller
 
     /**
      * Documentation for splade input.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function inputFloat()
@@ -328,7 +327,7 @@ class DocumentationController extends Controller
 
     /**
      * Documentation for splade textarea.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function textarea()
@@ -340,7 +339,7 @@ class DocumentationController extends Controller
 
     /**
      * Documentation for splade select.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function select()
@@ -352,7 +351,7 @@ class DocumentationController extends Controller
 
     /**
      * Documentation for splade checkbox.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function checkbox()
@@ -364,7 +363,7 @@ class DocumentationController extends Controller
 
     /**
      * Documentation for splade radio.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function radio()
@@ -376,7 +375,7 @@ class DocumentationController extends Controller
 
     /**
      * Documentation for splade file.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function file()
@@ -388,7 +387,7 @@ class DocumentationController extends Controller
 
     /**
      * Documentation for splade group.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function group()
@@ -400,7 +399,7 @@ class DocumentationController extends Controller
 
     /**
      * Documentation for splade submit.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function submit()
@@ -412,7 +411,7 @@ class DocumentationController extends Controller
 
     /**
      * Documentation for splade wysiwyg.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function wysiwyg()
@@ -424,7 +423,7 @@ class DocumentationController extends Controller
 
     /**
      * Documentation for splade model binding.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function modelBinding()
@@ -439,7 +438,7 @@ class DocumentationController extends Controller
     // ! SPLADE TABLE COMPONENT DOCUMENTATION ---------------------------------------------------------------
     /**
      * Documentation for splade table.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function tableOverview()
@@ -451,7 +450,7 @@ class DocumentationController extends Controller
 
     /**
      * Documentation for splade table Query Builder.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function tableQueryBuilder()
@@ -463,7 +462,7 @@ class DocumentationController extends Controller
 
     /**
      * Documentation for splade table Bulk Action.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function tableBulkAction()
@@ -475,7 +474,7 @@ class DocumentationController extends Controller
 
     /**
      * Documentation for splade table Export.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function tableExport()
@@ -487,7 +486,7 @@ class DocumentationController extends Controller
 
     /**
      * Documentation for splade table Spatie Query Builder.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function tableSpatieQueryBuilder()
