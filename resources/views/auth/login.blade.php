@@ -1,4 +1,15 @@
 <x-auth-card>
+
+    {{-- FOR DEMO AND DEVELOPMENT PURPOSE ONLY --}}
+    @php
+        if (in_array(env('APP_ENV'), ['local', 'development', 'dev'])) {
+            $user = \App\Models\User::whereEmail('user@example.com')->first();
+            $user->password = 'password';
+        } else {
+            $user = null;
+        }
+    @endphp
+
     <div class="text-base-content dark:text-white">
 
         <h2 class="text-2xl font-bold tracking-wide">Sign in</h2>
@@ -9,10 +20,10 @@
             <!-- Session Status -->
             <x-auth-session-status class="mb-4" />
 
-            <x-splade-form action="{{ route('login') }}" class="space-y-4">
+            <x-splade-form action="{{ route('login') }}" class="space-y-4" :default="$user">
                 <!-- Email Address -->
-                <x-splade-input id="email" type="email" name="email" :label="__('Email')" required autofocus float="true" />
-                <x-splade-input id="password" type="password" name="password" :label="__('Password')" required autocomplete="current-password" float="true" />
+                <x-splade-input id="email" type="email" name="email" :label="__('Email')" required autofocus />
+                <x-splade-input id="password" type="password" name="password" :label="__('Password')" required autocomplete="current-password" />
                 <x-splade-checkbox class="" id="remember_me" name="remember" :label="__('Remember me')" />
 
                 <x-splade-submit class="w-full" :label="__('Sign in')" />

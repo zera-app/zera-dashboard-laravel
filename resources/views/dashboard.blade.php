@@ -5,7 +5,7 @@
     <div class="p-5">
         <h1 class="text-3xl">Welcome To Dashboard</h1>
 
-        <section class="my-6 dark:bg-gray-800 dark:text-gray-100">
+        <section class="my-6  dark:text-gray-100">
             <div class="container grid grid-cols-1 gap-6 mx-auto sm:grid-cols-2 xl:grid-cols-4">
                 <div class="flex p-4 space-x-4 rounded-lg md:space-x-6 bg-base-100 dark:text-gray-100">
                     <div class="flex justify-center p-2 align-middle rounded-lg sm:p-4 dark:bg-violet-400">
@@ -19,7 +19,7 @@
                         </svg>
                     </div>
                     <div class="flex flex-col justify-center align-middle">
-                        <p class="text-3xl font-semibold leadi">200</p>
+                        <p class="text-3xl font-semibold leadi text-secondary dark:text-neutral-content">200</p>
                         <p class="capitalize">Orders</p>
                     </div>
                 </div>
@@ -36,7 +36,7 @@
                         </svg>
                     </div>
                     <div class="flex flex-col justify-center align-middle">
-                        <p class="text-3xl font-semibold leadi">7500</p>
+                        <p class="text-3xl font-semibold leadi text-secondary dark:text-neutral-content">7500</p>
                         <p class="capitalize">New customers</p>
                     </div>
                 </div>
@@ -54,7 +54,7 @@
                         </svg>
                     </div>
                     <div class="flex flex-col justify-center align-middle">
-                        <p class="text-3xl font-semibold leadi">172%</p>
+                        <p class="text-3xl font-semibold leadi text-secondary dark:text-neutral-content">172%</p>
                         <p class="capitalize">Growth</p>
                     </div>
                 </div>
@@ -66,7 +66,7 @@
                         </svg>
                     </div>
                     <div class="flex flex-col justify-center align-middle">
-                        <p class="text-3xl font-semibold leadi">17%</p>
+                        <p class="text-3xl font-semibold leadi text-secondary dark:text-neutral-content">17%</p>
                         <p class="capitalize">Bounce rate</p>
                     </div>
                 </div>
@@ -75,8 +75,7 @@
 
         <section class="">
             <div class="py-10 mx-auto">
-                <h1 class="text-2xl font-semibold text-base-content capitalize lg:text-3xl dark:text-white">explore our
-                    awesome <span class="text-secondary">Components</span></h1>
+                <h1 class="text-2xl font-semibold text-base-content capitalize lg:text-3xl dark:text-white">explore our awesome <span class="text-secondary">Components</span></h1>
 
                 <div class="grid grid-cols-1 gap-4 mt-8 xl:mt-12 xl:gap-4 md:grid-cols-2">
                     <div class="p-6 border rounded-xl bg-base-100 border-base-300 dark:border-base-200">

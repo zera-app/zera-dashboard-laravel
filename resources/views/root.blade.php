@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-theme="light" class="dark">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-theme="light">
 
 <head>
     <meta charset="utf-8">
@@ -18,6 +18,20 @@
 
 <body class="font-sans antialiased">
     @splade
+
+    <script>
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme) {
+            this.theme = savedTheme;
+            document.documentElement.setAttribute("data-theme", savedTheme);
+
+            if (savedTheme === "dracula") {
+                document.documentElement.classList.add("dark");
+            } else {
+                document.documentElement.classList.remove("dark");
+            }
+        }
+    </script>
 </body>
 
 </html>
