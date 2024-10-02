@@ -43,6 +43,12 @@ export default {
         if (savedTheme) {
             this.theme = savedTheme;
             document.documentElement.setAttribute("data-theme", savedTheme);
+
+            if (savedTheme === "dracula") {
+                document.documentElement.classList.add("dark");
+            } else {
+                document.documentElement.classList.remove("dark");
+            }
         }
     },
     methods: {
@@ -51,6 +57,12 @@ export default {
             document.documentElement.setAttribute("data-theme", newTheme);
             this.theme = newTheme;
             localStorage.setItem("theme", newTheme);
+
+            if (newTheme === "dracula") {
+                document.documentElement.classList.add("dark");
+            } else {
+                document.documentElement.classList.remove("dark");
+            }
         },
     },
 };
