@@ -2,15 +2,10 @@
 
 Using
 
--   [Splade](https://splade.dev)
--   [Daisy UI](https://daisyui.com) Components
+-   [Splade](https://splade.dev) SPA
+-   [Daisy UI](https://daisyui.com) UI Components
 -   [Icon Heroicons](https://heroicons.com) from [Blade UI kit - Icon](https://github.com/blade-ui-kit)
--   [DiceBear](https://www.dicebear.com/) Profile image 
-
-## Demo
-Demo Link : <a href="http://45.13.132.248:8008/login">Here</a>
-<p>email : user@example.com</p>
-password : password
+-   [DiceBear](https://www.dicebear.com/) Icon Profile
 
 ## Development Process
 
