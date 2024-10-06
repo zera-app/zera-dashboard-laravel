@@ -3,7 +3,11 @@
 namespace App\Http\Controllers\Documentation;
 
 use App\Http\Controllers\Controller;
+use App\Models\User;
+use Carbon\Carbon;
 use Illuminate\View\View;
+use PhpParser\Node\Stmt\Label;
+use ProtoneMedia\Splade\SpladeTable;
 
 class DocumentationController extends Controller
 {
@@ -445,7 +449,27 @@ class DocumentationController extends Controller
     {
         $this->spladeTitle('Table Overview');
 
-        return view('documentation.table-overview');
+        return view('documentation.table-overview', [
+            'data' => SpladeTable::for(User::class)
+                ->column(
+                    key: 'name',
+                    label: 'User Name',
+                    canBeHidden: true,
+                    hidden: false,
+                    sortable: true,
+                    searchable: true
+                )
+                ->column(
+                    key: 'email',
+                    label: 'Email',
+                    canBeHidden: true,
+                    hidden: false,
+                    sortable: true,
+                    searchable: true
+                )
+                ->column(key: 'created_at', label: 'Created At', as: fn($value) => Carbon::parse($value)->format('d M Y H:i'))
+                ->paginate(15),
+        ]);
     }
 
     /**
